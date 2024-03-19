@@ -1,4 +1,4 @@
-/* ul{
+/* #14 ul{
     list-style: none;
     
 }
@@ -18,7 +18,8 @@
     margin-top: 20px;
     
 } */
-ul{
+
+/* #15 ul{
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -45,5 +46,66 @@ li a{
 li a:hover{
     background-color: rgb(53, 53, 190);
     color: white;
+} */
+/* #16 body{
+    background-color: wheat;
 }
+p{
+    margin-left: 200px;
+}
+button{
+    background-color: white;
+    width: 100px;
+    left: 20px;
+	top: 200px;
+	width: 100px;
+	position:fixed;
+    } */
 
+
+    /* #17 body {
+        background-color:  #000000dc;
+    }
+  .box-main {
+        position: relative;
+        border: 3px solid rgb(255, 255, 255);
+        width: 400px;
+        height: 400px;
+        margin: 10px auto;
+    }
+ .box1 {
+        position:absolute;
+        border: 3px solid rgb(255, 255, 255);
+        background:red;
+        width: 80px;
+        height:60px;
+        left: 50px;
+        top: 50px;
+    }
+ .box2 {
+        position:absolute;
+        border: 3px solid rgb(255, 255, 255);
+        background:blue;
+        width: 80px;
+        height:180px;
+        left: 50px;
+        top: 150px;
+    }
+.box3 {
+        border: 3px solid rgb(255, 255, 255);
+        background:green;
+        width: 180px;
+        height:160px;
+        position:absolute;
+        right: 50px;
+        top: 50px;
+    }
+ .box4 {
+        border: 3px solid rgb(255, 255, 255);
+        background:yellow;
+        width: 180px;
+        height:60px;
+        position:absolute;
+        right: 50px;
+        bottom: 65px;
+    } */
