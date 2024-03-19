@@ -1,4 +1,4 @@
-ul{
+/* ul{
     list-style: none;
     
 }
@@ -17,4 +17,33 @@ ul{
 .mar1{
     margin-top: 20px;
     
+} */
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: rgba(128, 128, 128, 0.075);
+    padding: 5px;
+    width: max-content;
 }
+li a{
+    background-color: #fff;
+    
+    color: blue;
+    text-decoration: none;
+    width: 150px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:600 ;
+    transition: all .1s linear;
+
+}
+li a:hover{
+    background-color: rgb(53, 53, 190);
+    color: white;
+}
+
