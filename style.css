@@ -109,3 +109,46 @@ button{
         right: 50px;
         bottom: 65px;
     } */
+
+
+    .clock {
+        position: relative;
+        left: 200px;
+        top: 200px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid rgb(253, 0, 0);
+        border-radius: 50%;
+    }
+
+.hour,.minute {
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background: rgb(2, 230, 97);
+        top: 50%;
+        transform-origin: 100%;
+        animation: rotateHour 12s infinite linear;
+    }
+
+.minute {
+    animation: rotateMinute 60s infinite linear;
+}
+
+    @keyframes rotateHour {
+        from {
+            transform: rotate(90deg);
+        }
+        to {
+            transform: rotate(450deg);
+        }
+    }
+
+    @keyframes rotateMinute {
+        from {
+            transform: rotate(90deg);
+        }
+        to {
+            transform: rotate(450deg);
+        }
+    }
