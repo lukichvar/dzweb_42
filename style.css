@@ -344,7 +344,7 @@ td:first-child {
     overflow: auto;
 } */
 
-
+/* 
 .ENTERPRISE{
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
@@ -514,4 +514,50 @@ td:first-child {
     border-radius: 10px;
     background-color: rgb(21, 247, 0);
     border-style:none ;
+} */
+
+
+body{
+    background-color: rgb(24, 39, 9);
+}
+.Home{
+    color: rgb(163, 165, 165);
+}
+h1{
+    color: white;
+    
+}
+.autor-info{
+    color: white;
+    position: relative;
+    left: 120px;
+}
+.comments{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 240px;
+    bottom: 53px;
+}
+.publ{
+    color: white;
+    position: relative;
+    left: 360px;
+    bottom: 105px ;  
+}
+.updates{
+    color: white;
+    position: relative;
+    left: 480px;
+    bottom: 160px;
+}
+.avatar{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 80px;
+}
+@media screen and(max-width>600) {
+    .page{display: block;}
+    
 }
