@@ -224,21 +224,36 @@ p{
     color: rgba(255, 8, 8, 0.39);
 } */
 
-.backgroun{
+ol{
+    background-color: rgb(223, 106, 106);
     width: 600px;
-    height: 300px;
-    background-color: rgba(194, 79, 102, 0.692);
-
-}
-
-ul{
-    list-style: none;
-}
-li{
+    height: 200px;
     color: white;
+    position: relative;
+    
+
+
 }
 
-
-
-
-
+li{
+    margin-top: 10px;
+    background-color: rgb(231, 74, 74);
+    position: relative;
+    right: 10px;
+    top: 20px;
+}
+.apple{
+    width: 100px;
+}
+.Orange{
+    width: 150px;
+}
+.Pineaple{
+    width: 200px;
+}
+.Pear{
+    width: 90px;
+}
+.Cherry{
+    width: 210px;
+}
