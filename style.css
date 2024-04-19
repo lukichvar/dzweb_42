@@ -283,3 +283,27 @@ li{
 li{
     list-style: none;
 } */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+
+    border: 1px solid rgba(252, 2, 2, 0);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+}
+
+td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: white;
+}
