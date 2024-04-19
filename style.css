@@ -351,8 +351,13 @@ td:first-child {
     width: 250px;
     height: 350px;
     border: 2px solid rgba(0, 0, 0, 0.445);
+    transition: width 1s;
+
  
     
+}
+.ENTERPRISE:hover {
+    height: 400px;
 }
 .ENTERPRISE hr{
     position: relative;
@@ -387,8 +392,15 @@ td:first-child {
     width: 250px;
     height: 350px;
     border: 2px solid rgba(0, 0, 0, 0.445);
+    position: relative;
+    left: 270px;
+    bottom: 355px;
+    transition: width 1s;
  
     
+}
+.PRO:hover {
+    height: 400px;
 }
 .PRO hr{
     position: relative;
@@ -415,5 +427,91 @@ td:first-child {
     color: white;
     border-radius: 10px;
     background-color: rgb(241, 255, 47);
+    border-style:none ;
+}
+.STANDART{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.445);
+    position: relative;
+    left: 540px;
+    bottom: 710px;
+    transition: width 1s;
+ 
+    
+}
+.STANDART:hover {
+    height: 400px;
+}
+.STANDART hr{
+    position: relative;
+    background-color: rgb(6, 29, 240);
+    border-style:none ;
+    height: 1px;
+    width: 245px;
+
+}
+.STANDART h1{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.STANDART p{
+    position: relative;
+    text-align: center;
+}
+.STANDART button{
+    position: relative;
+    left: 85px;
+    width: 80px;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(6, 29, 240);
+    border-style:none ;
+}
+.BASIC{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.445);
+    position: relative;
+    left: 810px;
+    bottom: 1065px;
+    transition: width 1s;
+ 
+    
+}
+.BASIC:hover {
+    height: 400px;
+}
+.BASIC hr{
+    position: relative;
+    background-color: rgb(21, 247, 0);
+    border-style:none ;
+    height: 1px;
+    width: 245px;
+
+}
+.BASIC h1{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.BASIC p{
+    position: relative;
+    text-align: center;
+}
+.BASIC button{
+    position: relative;
+    left: 85px;
+    width: 80px;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(21, 247, 0);
     border-style:none ;
 }
