@@ -260,7 +260,7 @@ li{
     width: 210px;
 } */
 
-li:nth-child(odd) {
+/* li:nth-child(odd) {
     background-color: #5da9eb; 
   }
   
@@ -282,4 +282,4 @@ li:nth-child(odd) {
 
 li{
     list-style: none;
-}
+} */
