@@ -224,6 +224,8 @@ p{
     color: rgba(255, 8, 8, 0.39);
 } */
 
+
+/* 
 ol{
     background-color: rgb(223, 106, 106);
     width: 600px;
@@ -256,4 +258,28 @@ li{
 }
 .Cherry{
     width: 210px;
+} */
+
+li:nth-child(odd) {
+    background-color: #5da9eb; 
+  }
+  
+  li.checked {
+    background-color: #d3d3d3; 
+    text-decoration: line-through; 
+  }
+  
+  li.checked::before {
+    content: "\2713"; 
+    margin-right: 5px;
+  }
+  
+  li:not(.checked)::before {
+    content: "\2713"; 
+    margin-right: 5px;
+    color: red; 
+  }
+
+li{
+    list-style: none;
 }
