@@ -307,3 +307,113 @@ td:first-child {
     left: 0;
     background-color: white;
 } */
+
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60px;
+    background-color: #333;
+    transition: width 1s;
+}
+.sidebar:hover {
+    width: 200px;
+}
+.menu-item {
+    background-color: #333;;
+    margin-top: 50px;
+    padding: 10px;
+    color: white;
+    transition: background-color 0.5s;
+}
+.menu-item:hover {
+    background-color: #000000;
+}
+.content {
+    margin-left: 60px;
+    height: 2000px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    overflow: auto;
+} */
+
+
+.ENTERPRISE{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.445);
+ 
+    
+}
+.ENTERPRISE hr{
+    position: relative;
+    background-color: red;
+    border-style:none ;
+    height: 1px;
+    width: 245px;
+
+}
+.ENTERPRISE h1{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.ENTERPRISE p{
+    position: relative;
+    text-align: center;
+}
+.ENTERPRISE button{
+    position: relative;
+    left: 85px;
+    width: 80px;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    background-color: red;
+    border-style:none ;
+}
+.PRO{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.445);
+ 
+    
+}
+.PRO hr{
+    position: relative;
+    background-color: rgb(250, 246, 25);
+    border-style:none ;
+    height: 1px;
+    width: 245px;
+
+}
+.PRO h1{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.PRO p{
+    position: relative;
+    text-align: center;
+}
+.PRO button{
+    position: relative;
+    left: 85px;
+    width: 80px;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(241, 255, 47);
+    border-style:none ;
+}
