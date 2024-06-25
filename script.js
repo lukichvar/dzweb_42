@@ -477,3 +477,179 @@
 //   console.log(timeToSeconds(1, 2, 3)); // Вывод: 3723
 //   console.log(secondsToTime(7200)); // Вывод: 02:00:00
 //   console.log(calculateDateDifference(10, 30, 15, 11, 45, 30)); // Вывод: 22:09:45
+
+
+// Задание 1
+// Создать объект, описывающий автомобиль (производитель, 
+// модель, год выпуска, средняя скорость), и следующие функции 
+// для работы с этим объектом.
+// 1. Функция для вывода на экран информации об автомобиле.
+// 2. Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. 
+// Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
+
+class Car {
+    constructor(manufacturer, model, year, averageSpeed) {
+        this.manufacturer = manufacturer;
+        this.model = model;
+        this.year = year;
+        this.averageSpeed = averageSpeed;
+    }
+
+    displayInfo() {
+        console.log(`Производитель: ${this.manufacturer}`);
+        console.log(`Модель: ${this.model}`);
+        console.log(`Год: ${this.year}`);
+        console.log(`Сред скорость: ${this.averageSpeed} km/h`);
+    }
+
+    calculateTime(distance) {
+        let totalTime = distance / this.averageSpeed;
+        let restTime = Math.floor(totalTime / 4) * 1;
+        totalTime += restTime;
+        return totalTime;
+    }
+}
+
+
+let car = new Car("BMW", "M5CS", 2021, 200);
+car.displayInfo();
+let distance = 500;
+let time = car.calculateTime(distance);
+console.log(`Time to cover ${distance} km: ${time} hours`);
+
+
+// Задание 2
+// Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом.
+// 1. Функция сложения 2-х объектов-дробей.
+// 2. Функция вычитания 2-х объектов-дробей.
+// 3. Функция умножения 2-х объектов-дробей.
+// 4. Функция деления 2-х объектов-дробей.
+// 5. Функция сокращения объекта-дроби.
+
+
+class Fraction {
+    constructor(numerator, denominator) {
+        this.numerator = numerator;
+        this.denominator = denominator;
+    }
+
+    add(fraction) {
+        let resultNumerator = this.numerator * fraction.denominator + fraction.numerator * this.denominator;
+        let resultDenominator = this.denominator * fraction.denominator;
+        return new Fraction(resultNumerator, resultDenominator);
+    }
+
+    subtract(fraction) {
+        let resultNumerator = this.numerator * fraction.denominator - fraction.numerator * this.denominator;
+        let resultDenominator = this.denominator * fraction.denominator;
+        return new Fraction(resultNumerator, resultDenominator);
+    }
+
+    multiply(fraction) {
+        let resultNumerator = this.numerator * fraction.numerator;
+        let resultDenominator = this.denominator * fraction.denominator;
+        return new Fraction(resultNumerator, resultDenominator);
+    }
+
+    divide(fraction) {
+        let resultNumerator = this.numerator * fraction.denominator;
+        let resultDenominator = this.denominator * fraction.numerator;
+        return new Fraction(resultNumerator, resultDenominator);
+    }
+
+    simplify() {
+        const gcd = (a, b) => {
+            if (b === 0) {
+                return a;
+            }
+            return gcd(b, a % b);
+        };
+        const divisor = gcd(this.numerator, this.denominator);
+        return new Fraction(this.numerator / divisor, this.denominator / divisor);
+    }
+}
+let fraction1 = new Fraction(1, 2);
+let fraction2 = new Fraction(1, 3);
+
+
+let sum = fraction1.add(fraction2);
+console.log("Сумма:", sum.numerator, "/", sum.denominator);
+
+
+let difference = fraction1.subtract(fraction2);
+console.log("Разность:", difference.numerator, "/", difference.denominator);
+
+
+let product = fraction1.multiply(fraction2);
+console.log("Произведение:", product.numerator, "/", product.denominator);
+
+
+let quotient = fraction1.divide(fraction2);
+console.log("Частное:", quotient.numerator, "/", quotient.denominator);
+
+
+let simplifiedFraction = fraction1.simplify();
+console.log("Сокращенная дробь:", simplifiedFraction.numerator, "/", simplifiedFraction.denominator);
+
+
+// Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом.
+// 1. Функция вывода времени на экран.
+// 2. Функция изменения времени на переданное количество 
+// секунд.
+// 3. Функция изменения времени на переданное количество 
+// минут.
+// 4. Функция изменения времени на переданное количество 
+// часов.
+// Учтите, что в последних 3-х функциях, при изменении одной 
+// части времени, может измениться и другая. Например: если ко 
+// времени «20:30:45» добавить 30 секунд, то должно получиться 
+// «20:31:15», а не «20:30:75»
+
+class Time {
+    constructor(hours, minutes, seconds) {
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = seconds;
+    }
+
+    displayTime() {
+        console.log(`${this.hours} час(а)ов, ${this.minutes} минут(ы),${this.seconds} секунд(ы)`);
+    }
+
+    changeSeconds(seconds) {
+        this.seconds += seconds;
+        this.minutes += Math.floor(this.seconds / 60);
+        this.seconds %= 60;
+        this.hours += Math.floor(this.minutes / 60);
+        this.minutes %= 60;
+        this.hours %= 24;
+    }
+
+    changeMinutes(minutes) {
+        this.minutes += minutes;
+        this.hours += Math.floor(this.minutes / 60);
+        this.minutes %= 60;
+        this.hours %= 24;
+    }
+
+    changeHours(hours) {
+        this.hours += hours;
+        this.hours %= 24;
+    }
+}
+
+
+let currentTime = new Time(20, 30, 45);
+
+
+currentTime.displayTime();
+
+currentTime.changeSeconds(30);
+currentTime.displayTime();
+
+currentTime.changeMinutes(15);
+currentTime.displayTime();
+
+
+currentTime.changeHours(2);
+currentTime.displayTime();
